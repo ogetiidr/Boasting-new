@@ -108,6 +108,31 @@
     from { box-shadow:0 0 15px #0f0, 0 0 30px lime; }
     to { box-shadow:0 0 30px #0f0, 0 0 60px lime; }
   }
+
+  .social-links {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .social-links a {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 85%;
+    border: 1px solid #0f0;
+    border-radius: 8px;
+    background: #000;
+    color: #0f0;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 0 15px #0f0;
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    background: #0f0;
+    color: #000;
+    box-shadow: 0 0 25px #0f0;
+  }
 </style>
 </head>
 <body>
@@ -149,9 +174,13 @@
 
     <p><b>Total: </b><span id="price">0</span> KSh</p>
 
-    <!-- Buttons -->
     <button onclick="payNow()">💸 Pay via Money Wallets (M-Pesa Prompt)</button>
     <button onclick="submitForApproval()">✅ Submit for Approval</button>
+  </div>
+
+  <div class="social-links">
+    <a href="https://chat.whatsapp.com/CjoDXOsAQVc9dRytsvPNEA?mode=ems_copy_t" target="_blank">📱 Join Our WhatsApp Group</a>
+    <a href="https://whatsapp.com/channel/0029Vb1aC844o7qUgewgYS0P" target="_blank">📢 Follow Our Channel</a>
   </div>
 </div>
 
@@ -197,4 +226,4 @@ function submitForApproval() {
 }
 </script>
 </body>
-  </html>
+</html>
